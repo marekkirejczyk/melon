@@ -1,3 +1,5 @@
+var Contribution = artifacts.require("./Contribution.sol");
+
 module.exports = (deployer) => {
   const melonport = '0x32cd3282d33ff58b4ae8402a226a0b27441b7f1a';
   const signer = '0x32cd3282d33ff58b4ae8402a226a0b27441b7f1a';
