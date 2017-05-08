@@ -1,3 +1,7 @@
+var Contribution = artifacts.require("./Contribution.sol");
+var MelonToken = artifacts.require("./MelonToken.sol");
+
+
 const async = require('async');
 const assert = require('assert');
 const BigNumber = require('bignumber.js');

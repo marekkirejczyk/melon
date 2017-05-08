@@ -9,25 +9,14 @@ module.exports = {
     ],
     "images/": "images/"
   },
-  rpc: {
-    host: "localhost",
-    port: 8545
-  },
   networks: {
-    "live": {
-      network_id: 1, // Ethereum public network
-      // optional config values
-      // host - defaults to "localhost"
-      // port - defaults to 8545
-      // gas
-      // gasPrice
-      // from - default address to use for any transaction Truffle makes during migrations
-    },
-    "morden": {
-      network_id: 2, // Official Ethereum test network
-    },
-    "development": {
-      network_id: "default"
+    development: {
+      host: "localhost",
+      port: 8545,
+      network_id: "*" // Match any network id
     }
+  },
+  rpc: {
+    from: "0x888623a6DeEc123c844BcEfD57bE30B8bc0a5e27"
   }
 };
